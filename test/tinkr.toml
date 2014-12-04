@@ -1,0 +1,13 @@
+# unique identifier for the app
+name = "test"
+
+[hosting]
+
+# uncomment if you want to host the app on a specific domain
+#domain = "www.somewhere.com"
+
+# manually specify the port of your application. 
+#port = 60532
+
+# specify address to use for the reverse proxy.
+proxy = ""

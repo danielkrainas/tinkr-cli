@@ -1,0 +1,34 @@
+# unique identifier for the app
+name = "{{name}}"
+
+{% if !stub %}# semver-compatibile version of the app
+version = "{{version}}"
+
+{% endif %}[hosting]
+
+# uncomment if you want to host the app on a specific domain
+{% if domain %}domain = '{{domain}}'{% else %}#domain = "www.somewhere.com"{% endif %}
+{% if !stub %}# commands to run when installing your app
+install = []
+
+# the system will dynamically attempt to determine the app's port (hosted only).
+# note - in the event your app utilizes multiple ports, consider manually
+# specifying your port with the "port" setting.
+resolvePort = {% if port %}false{% else %}true{% endif %}
+{% endif %}
+# {% if port %}uncomment to {% endif %}manually specify the port of your application. 
+{% if port %}port = {{port}}{% else %}#port = 60532{% endif %}
+
+{% if stub %}# specify address to use for the reverse proxy.
+proxy = "{{proxy}}"{% else %}
+
+[startup]
+# command to execute when starting the app
+command = ""
+
+# arguments to pass to the start command
+args = []
+
+# the delay in milliseconds before the app is considered running
+delay = 0
+{% endif %}
