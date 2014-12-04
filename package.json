@@ -2,7 +2,7 @@
   "name": "tinkr-cli",
   "version": "0.0.1",
   "description": "cli tool for tinkr server",
-  "main": "tinkr.js",
+  "main": "index.js",
   "scripts": {
 
   },
@@ -13,6 +13,10 @@
   "engines": {
     "node": "0.10.x || 0.8.x"
   },
+  "bin": {
+    "tinkr": "bin/tinkr"
+  },
+  "preferGlobal": true,
   "license": "MIT",
   "dependencies": {
     "commander": "~2.5.0",

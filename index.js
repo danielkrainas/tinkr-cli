@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var _ = require('lodash');
 var program = require('commander');
 var fs = require('fs');
