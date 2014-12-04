@@ -26,7 +26,8 @@ Commands:
   remotes
   snapshots [name]
   stubs
-  remove-remote [name]    
+  remove-remote [name]
+  remove-stub [name]
 
 Options:
 
