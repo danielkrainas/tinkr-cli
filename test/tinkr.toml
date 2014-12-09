@@ -1,13 +1,34 @@
 # unique identifier for the app
 name = "test"
 
+# semver-compatibile version of the app
+version = "0.0.2"
+
 [hosting]
 
 # uncomment if you want to host the app on a specific domain
-#domain = "www.somewhere.com"
+domain = "kwerk.io.dk"
+# commands to run when installing your app
+install = [
+    "npm install"
+]
+
+# the system will dynamically attempt to determine the app's port (hosted only).
+# note - in the event your app utilizes multiple ports, consider manually
+# specifying your port with the "port" setting.
+resolvePort = true
 
 # manually specify the port of your application. 
 #port = 60532
 
-# specify address to use for the reverse proxy.
-proxy = ""
+
+
+[startup]
+# command to execute when starting the app
+command = "node"
+
+# arguments to pass to the start command
+args = ["index"]
+
+# the delay in milliseconds before the app is considered running
+delay = 1000
