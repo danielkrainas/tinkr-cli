@@ -3,9 +3,7 @@
   "version": "0.0.5",
   "description": "cli tool for tinkr server",
   "main": "index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "author": {
     "name": "Daniel Krainas",
     "email": "me@danielkrainas.com"
@@ -24,13 +22,13 @@
     "fs-extra": "~0.12.0",
     "async": "~0.9.0",
     "lodash": "~2.4.1",
-    "node-rest-client": "~1.4.1",
     "url-join": "0.0.1",
     "safe-json-parse": "~2.0.0",
     "interpolate": "~0.1.0",
     "swig": "~1.4.2",
     "toml": "~2.0.6",
     "adm-zip": "~0.4.4",
-    "ignore-doc": "0.0.1"
+    "ignore-doc": "0.0.1",
+    "restler": "~3.2.2"
   }
 }
