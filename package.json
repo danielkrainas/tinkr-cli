@@ -12,7 +12,7 @@
     "node": "0.10.x || 0.8.x"
   },
   "bin": {
-    "tinkr": "bin/tinkr"
+    "tinkr": "bin/tinkr.js"
   },
   "preferGlobal": true,
   "license": "MIT",
