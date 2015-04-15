@@ -2,7 +2,7 @@
 name = "test"
 
 # semver-compatibile version of the app
-version = "0.0.2"
+version = "0.0.3"
 
 [hosting]
 
@@ -32,3 +32,6 @@ args = ["index"]
 
 # the delay in milliseconds before the app is considered running
 delay = 1000
+
+[remote]
+host = "http://localhost:2999"
