@@ -35,6 +35,7 @@ var walk = function (path) {
             var cmd = require(newPath);
             program
                 .command(cmd.command)
+                .description(cmd.description || '')
                 .action(cmd.action);
         }
     });
