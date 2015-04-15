@@ -31,7 +31,7 @@ var walk = function (path) {
     fs.readdirSync(path).forEach(function (file) {
         var newPath = path + '/' + file;
         var stat = fs.statSync(newPath);
-        if (stat.isFile() && file !== 'helpers.js' && /(.*).(js$)/.test(file)) {
+        if (stat.isFile() && file !== 'action-builder.js' && /(.*).(js$)/.test(file)) {
             var cmd = require(newPath);
             program
                 .command(cmd.command)
