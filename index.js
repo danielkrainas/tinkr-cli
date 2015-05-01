@@ -23,7 +23,7 @@ program
     .option('-r, --remote [name]', 'Specify a remote to target.', addRemote, [])
     .option('-A, --all-remotes', 'Specifies all remotes as targets.')
     .option('-h, --host <hostname>', 'Hostname setting')
-    .option('--stub', 'Marks the operation as stub-only.')
+    .option('--relay', 'Marks the operation as relay-only.')
     .option('--proxy <proxy>', 'Proxy target address');
 
 var commands_path = __dirname + '/lib/commands';

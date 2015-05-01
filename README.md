@@ -18,16 +18,16 @@ Usage: tinkr [options] [command]
 Commands:
 
   add-remote [name] [host]
-  add-stub [projectDir]
+  addrelay [projectDir]
   snapshot [projectDir]
   deploy [projectDir]
   init [projectDir]
   projects
   remotes
   snapshots [name]
-  stubs
+  relays
   remove-remote [name]
-  remove-stub [name]
+  removerelay [name]
 
 Options:
 
@@ -36,7 +36,7 @@ Options:
   -r, --remote [name]    Specify a remote to target.
   -A, --all-remotes      Specifies all remotes as targets.
   -h, --host <hostname>  Hostname setting
-  --stub                 Marks the operation as stub-only.
+  --relay                 Marks the operation as relay-only.
   --proxy <proxy>        Proxy target address
 ```
 
