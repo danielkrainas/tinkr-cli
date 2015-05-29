@@ -6,6 +6,8 @@ var interpolate = require('interpolate');
 var pkg = require('./package.json');
 var remoteList = require('./lib/remote-list');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 
 var addRemote = function (name, remotes) {
     var remote = remoteList.getByName(name);
