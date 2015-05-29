@@ -17,17 +17,17 @@
   "preferGlobal": true,
   "license": "MIT",
   "dependencies": {
+    "adm-zip": "~0.4.4",
+    "async": "~0.9.0",
     "commander": "~2.5.0",
     "form-data": "~0.1.4",
     "fs-extra": "~0.12.0",
-    "async": "~0.9.0",
-    "lodash": "~2.4.1",
-    "safe-json-parse": "~2.0.0",
-    "interpolate": "~0.1.0",
-    "swig": "~1.4.2",
-    "toml": "~2.0.6",
-    "adm-zip": "~0.4.4",
     "ignore-doc": "0.0.1",
-    "restler": "~3.2.2"
+    "interpolate": "~0.1.0",
+    "lodash": "~2.4.1",
+    "restler": "~3.2.2",
+    "safe-json-parse": "^4.0.0",
+    "swig": "~1.4.2",
+    "toml": "~2.0.6"
   }
 }
