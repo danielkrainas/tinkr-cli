@@ -4,6 +4,7 @@ The command line client for the tinkr server.
 
 **Please Note:** this is still a work in progress as I flush out the featureset of both client and server. 
 
+**June 2015 Update:** This project, along with the server, are going to be reworked in Go. There will be a tag on the last node related commit. Afterwords, the project will be restructured.
 
 ## Installation
 
