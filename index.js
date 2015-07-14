@@ -42,6 +42,12 @@ var walk = function (path) {
 };
 walk(commands_path);
 
+program
+    .command('*')
+    .action(function () {
+        program.outputHelp();
+});
+
 remoteList.load(function () {
     console.log();
     program.parse(process.argv);
