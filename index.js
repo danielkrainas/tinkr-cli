@@ -3,7 +3,7 @@ var program = require('commander');
 var fs = require('fs');
 var interpolate = require('interpolate');
 
-var pkg = require('./package.json');
+var config = require('./config');
 var remoteList = require('./lib/remote-list');
 
 
@@ -19,7 +19,7 @@ var addRemote = function (name, remotes) {
 };
 
 program
-    .version(pkg.version)
+    .version(config.pkg.version)
     .option('-r, --remote [name]', 'Specify a remote to target.', addRemote, [])
     .option('-A, --all-remotes', 'Specifies all remotes as targets.')
     .option('-h, --host <hostname>', 'Hostname setting')
