@@ -1,2 +1,3 @@
-[remote.default]
+[[remotes]]
 host="https://localhost:2998"
+default=true

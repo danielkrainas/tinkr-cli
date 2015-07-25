@@ -4,10 +4,14 @@ name = "test"
 # semver-compatibile version of the app
 version = "0.0.3"
 
+[relay]
+domain = "collab.fake"
+destination = "localhost:8675"
+
 [hosting]
 
 # uncomment if you want to host the app on a specific domain
-domain = "kwerk.io.dk"
+domain = "collab.fake"
 # commands to run when installing your app
 install = [
     "npm install"
