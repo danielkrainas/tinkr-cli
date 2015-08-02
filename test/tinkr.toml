@@ -2,16 +2,15 @@
 name = "test"
 
 # semver-compatibile version of the app
-version = "0.0.3"
+version = "0.0.4"
 
 [relay]
 domain = "collab.fake"
-destination = "localhost:8675"
+destination = "http://localhost:8675"
 
 [hosting]
+maxRestarts = 5
 
-# uncomment if you want to host the app on a specific domain
-domain = "collab.fake"
 # commands to run when installing your app
 install = [
     "npm install"
@@ -25,6 +24,12 @@ resolvePort = true
 # manually specify the port of your application. 
 #port = 60532
 
+[hosting.relay]
+# uncomment if you want to host the app on a specific domain
+domain = "collab.fake"
+
+destination = "http://localhost"
+
 
 
 [startup]
@@ -37,5 +42,5 @@ args = ["index"]
 # the delay in milliseconds before the app is considered running
 delay = 1000
 
-[remote]
-host = "http://localhost:2999"
+instances = 1
+
