@@ -2,14 +2,16 @@
 name = "test"
 
 # semver-compatibile version of the app
-version = "0.0.4"
+version = "0.0.5"
 
 [relay]
 domain = "collab.fake"
 destination = "http://localhost:8675"
 
 [hosting]
-maxRestarts = 5
+instances = 1
+
+maxRestarts = 3
 
 # commands to run when installing your app
 install = [
@@ -40,7 +42,4 @@ command = "node"
 args = ["index"]
 
 # the delay in milliseconds before the app is considered running
-delay = 1000
-
-instances = 1
-
+delay = 2000
